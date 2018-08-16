@@ -5,7 +5,7 @@ setup(name='Gender_predictor',
       description=(' '),
       author='Pallavi Pundir',
       author_email='pallavi.pundir18@gmail.com',
-      url='https://github.com/pallavipundir/Gender_predictor',
+      url='https://github.com/pallavipundir',
       packages=find_packages(),
       install_requires=['nltk'],
       )
