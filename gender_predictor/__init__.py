@@ -26,7 +26,7 @@ class GenderPredictor():
             features = self._name_features(name)
         
             gender = 'M' if male_counts > female_counts else 'F'
-            if  mydict['last_three']=='HAY' or mydict['last_three']=='PAL' or\
+            if  mydict['last_four']=='NDRA' or mydict['last_three']=='HAY' or mydict['last_three']=='PAL' or\
                 mydict['last_three']=='NNY' or mydict['last_three']=='ORE' or mydict['last_two']=='AI':
                 gender=gender.replace('F', 'M')
             elif mydict['last_three']=='EEN' or mydict['last_three']=='ELL' or mydict['last_three']=='YLL' or mydict['last_two']=='OL' or \
@@ -65,8 +65,8 @@ class GenderPredictor():
             'last_is_vowel': (name[-1] in 'AEIOUY'),
             'last_letter': name[-1],
             'last_three': name[-3:],
-            'last_two': name[-2:]}
-            #'last_four':name[-4:]}
+            'last_two': name[-2:],
+            'last_four':name[-4:]}
     
         return(mydict)
 
